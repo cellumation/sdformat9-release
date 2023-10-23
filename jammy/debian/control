@@ -18,7 +18,7 @@ Vcs-Browser: https://bitbucket.org/osrf/sdformat9-release
 Vcs-Hg: https://bitbucket.org/osrf/sdformat9-release
 Homepage: http://sdformat.org
 
-Package: libsdformat9
+Package: libsdformat9-9
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -49,7 +49,7 @@ Section: libdevel
 Depends: libtinyxml-dev,
          libignition-tools-dev,
          libignition-math6-dev,
-         libsdformat9 (= ${binary:Version}),
+         libsdformat9-9 (= ${binary:Version}),
          ${misc:Depends}
 Breaks: libsdformat2-dev,
         libsdformat3-dev,
@@ -92,7 +92,7 @@ Architecture: any
 Section: debug
 Priority: extra
 Depends:
-     libsdformat9 (= ${binary:Version}),
+     libsdformat9-9 (= ${binary:Version}),
      ${misc:Depends}
 Multi-Arch: same
 Description: Simulation Description Format (SDF) parser - Debugging symbols
